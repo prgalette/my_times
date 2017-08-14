@@ -1,0 +1,218 @@
+/*  CODECADEMY:   Building Websites From Scratch
+    UNIT:         04 Display and Positioning
+    PROJECT:      My Times Project
+    DESCRIPTION:  Create a fictional news website.
+    NOTES:
+    */
+
+/* Flex Continer - Header */
+body {
+  margin: 0;
+  border: 0;
+}
+.header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 10;
+    }
+
+/* Flex item "title": Logo and text */
+.title {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  padding-left: 30px;
+}
+
+.title img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.title span {
+  color: MediumAquamarine;
+}
+
+/* Flex Item - Navigation */
+nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.nav span {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.nav span a {
+  color: black;
+}
+
+/* Main Content Section */
+main {
+  display: flex;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  top: 120px;
+  padding-top: 120px;
+  width: 1232px;
+  margin: 0 auto 50px auto;
+}
+
+main .column-large {
+  flex-direction: column;
+  margin-right: 30px;
+  width: 630px;
+}
+
+main .column-medium {
+  flex-direction: column;
+  margin-right: 30px;
+  width: 300px;
+}
+
+main .column-small {
+  width: 240px;
+}
+/* Border Guide:
+ main, div, span, h2, p, h3, dl, img {
+   border: 1px solid black;
+ } */
+
+ .horizontal {
+   display: inline-flex;
+   justify-content: space-between;
+   width: 630px;
+   margin-top: 15px;
+ }
+
+ .horizontal.tier1.tier2 {
+   display: inline-flex;
+   flex-direction: column;
+   height: 320px;
+   width: 300px;
+ }
+
+.tier1 {
+  margin-right: 20px;
+}
+
+.tier2 {
+  margin-left: 20px;
+}
+
+.image1 {
+  background-image: url("../images/img-story-main.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  height: 300px;
+
+  }
+
+.image2 {
+  background-image: url("../images/img-story-2.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  height: 275px;
+}
+
+.image3{
+  background-image: url("../images/img-story-3.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  height: 246px;
+}
+
+.image4 {
+  background-image: url("../images/img-story-1.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  height: 220px;
+}
+
+.column-small {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-small h3 {
+  text-align: center;
+}
+
+.nb {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  margin: 0;
+  border-bottom: solid black 1px;
+  padding: 10px;
+}
+
+footer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer .foot {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: solid white 2px;
+}
+
+footer nav {
+  display: inline;
+  padding-left: 25px;
+  word-spacing: 20px;
+  color: black;
+}
+
+footer .info {
+  padding: 20px;
+}
+
+nav a {
+  color: black;
+}
